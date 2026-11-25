@@ -1,0 +1,13 @@
+{
+  "name": "God's Art Shop",
+  "short_name": "God's Art Shop",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#05070d",
+  "theme_color": "#05070d",
+  "icons": [
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "../img/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>God's Art | Window Tint, Car Wraps & Detailing in Cleveland</title>
+<meta name="description" content="Window tint, car wraps, paint restoration and detailing by Jay in Cleveland. Quality work, fair prices. Book online in about a minute.">
+<meta name="theme-color" content="#05070d">
+<meta property="og:title" content="God's Art | Tint · Wrap · Detailing">
+<meta property="og:description" content="More than just cars. It's a lifestyle. Book online in about a minute.">
+<meta property="og:image" content="img/wrap-charger.jpg">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="app/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="demo/demo.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="logo" aria-label="God's Art home"><img src="img/logo.svg" alt="God's Art" width="168" height="56"></a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#services">Services</a><a href="#shades">Tint</a><a href="#work">Work</a><a href="#visit">Visit</a>
+  </nav>
+  <a href="#book" class="btn btn-blue btn-sm magnetic">Book now</a>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="streaks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="dot"></span><span data-biz="city">Cleveland, OH</span><span class="eb-extra">· Tint · Wrap · Detailing</span></p>
+      <h1 class="hero-title">
+        <span class="line"><span class="sweep">More than</span></span>
+        <span class="line"><span class="sweep">just cars.</span></span>
+      </h1>
+      <p class="hero-life reveal">It's a lifestyle <span class="cross" aria-hidden="true">✝</span></p>
+      <p class="hero-sub reveal">Window tint, car wraps, paint restoration and deep-clean detailing. Quality work, fair prices, done by hand like it matters. Because it does.</p>
+      <div class="hero-cta reveal">
+        <a href="#book" class="btn btn-blue btn-lg magnetic">Book your spot <span class="arrow">→</span></a>
+        <a href="https://ig.me/m/wh0jay_1607" class="btn btn-ghost btn-lg" data-biz-href="contact" target="_blank" rel="noopener"><span data-biz="contact-label">DM on Instagram</span></a>
+      </div>
+      <ul class="proof reveal">
+        <li><b>Quality work,</b> fair prices</li>
+        <li><b>Tint, wrap &amp; detail</b> in one stop</li>
+        <li><b>$<span data-biz="deposit">25</span></b> holds your spot</li>
+      </ul>
+    </div>
+    <div class="hero-stack" id="heroStack" aria-hidden="true">
+      <figure class="card c1 film"><img src="img/clear-gloss.jpg" alt=""><figcaption>Fresh out the booth</figcaption></figure>
+      <figure class="card c2 film"><img src="img/wrap-charger.jpg" alt=""><figcaption>Car wrap</figcaption></figure>
+      <figure class="card c3 film"><img src="img/tint-sedan.jpg" alt=""><figcaption>Window tint</figcaption></figure>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Window tint</span><span>Car wraps</span><span>Paint restoration</span><span>Deep clean</span><span>Chrome delete</span><span>Long-lasting shine</span><span>Quality work, fair prices</span><span>Window tint</span><span>Car wraps</span><span>Paint restoration</span><span>Deep clean</span><span>Chrome delete</span><span>Long-lasting shine</span><span>Quality work, fair prices</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="section-head reveal">
+      <p class="kicker">01 / Services</p>
+      <h2>Tint. Wrap. Detail. <span class="blue">One stop.</span></h2>
+    </div>
+    <div class="services" id="serviceGrid"><!-- filled from /api/config --></div>
+  </section>
+
+  <!-- SHADE PICKER -->
+  <section class="section shades" id="shades">
+    <div class="shades-inner">
+      <div class="shades-copy reveal">
+        <p class="kicker dark">02 / Shade picker</p>
+        <h2>Pick your shade.</h2>
+        <p class="lede">Slide to see how dark each film runs. Lower number means darker glass. Tap a color to try a wrap.</p>
+        <div class="shade-readout">
+          <div class="shade-num"><span id="shadeNum">20</span><small>%</small></div>
+          <div>
+            <p class="shade-name" id="shadeName">Dark</p>
+            <p class="shade-desc" id="shadeDesc">You see out, they don't see in.</p>
+          </div>
+        </div>
+        <p class="legal" id="shadeLegal"></p>
+      </div>
+      <div class="car-wrap reveal">
+        <svg class="car" id="car" viewBox="0 0 800 290" role="img" aria-label="Car with tinted windows preview">
+          <defs>
+            <linearGradient id="paint" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="var(--paint-hi)"/><stop offset=".55" stop-color="var(--paint)"/><stop offset="1" stop-color="var(--paint-lo)"/>
+            </linearGradient>
+            <linearGradient id="glare" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <clipPath id="glass"><path id="glassPath" d="M262 156 Q330 104 398 97 L452 97 L452 156 Z M466 97 L518 97 Q552 99 590 128 L600 156 L466 156 Z"/></clipPath>
+          </defs>
+          <ellipse cx="400" cy="272" rx="360" ry="12" fill="#000" opacity=".35"/>
+          <!-- interior you can see through light tint -->
+          <g clip-path="url(#glass)">
+            <rect x="250" y="90" width="360" height="70" fill="#d9dcdc"/>
+            <path d="M330 156 q0-34 22-40 q18-4 22 10 l6 30z M520 156 q0-30 18-36 q16-4 20 8 l6 28z" fill="#3a3c3e"/>
+            <circle cx="300" cy="150" r="20" fill="none" stroke="#3a3c3e" stroke-width="6"/>
+            <rect id="tint" x="250" y="90" width="360" height="70" fill="#030304" opacity=".8"/>
+            <rect class="glare" x="160" y="80" width="120" height="90" fill="url(#glare)" transform="skewX(-25)"/>
+          </g>
+          <path class="body" fill="url(#paint)" d="M60 236 L40 232 Q26 226 28 208 L34 190 Q40 178 62 174 L246 152 Q262 150 262 156 L600 156 Q606 150 620 150 L692 152 Q742 158 758 174 L764 202 Q766 226 748 234 L668 236 A60 60 0 0 0 552 236 L248 236 A60 60 0 0 0 132 236 Z
+            M250 156 Q324 94 398 87 L520 87 Q560 89 600 122 L610 156 L600 156 L590 128 Q552 99 518 97 L398 97 Q330 104 262 156 Z"/>
+          <path d="M452 97 L466 97 L466 156 L452 156 Z" fill="#0b0b0c"/>
+          <path d="M70 196 L240 168" stroke="rgba(255,255,255,.25)" stroke-width="2"/>
+          <path d="M280 192 L740 190" stroke="rgba(0,0,0,.35)" stroke-width="2"/>
+          <rect x="420" y="174" width="26" height="5" rx="2" fill="rgba(0,0,0,.45)"/>
+          <rect x="548" y="174" width="26" height="5" rx="2" fill="rgba(0,0,0,.45)"/>
+          <path d="M34 192 l26 -4 l-4 12 l-24 2z" fill="#f3f3ee" opacity=".9"/>
+          <path d="M752 176 l10 4 l2 16 l-14 -2z" fill="#1f5bff"/>
+          <g class="wheel" transform="translate(190 236)"><circle r="50" fill="#0c0c0d"/><circle r="34" fill="#2a2b2d"/><circle r="34" fill="none" stroke="#6d7072" stroke-width="3"/><g class="spokes" stroke="#8b8e90" stroke-width="6" stroke-linecap="round"><line y1="-30" y2="30"/><line x1="-30" x2="30"/><line x1="-21" y1="-21" x2="21" y2="21"/><line x1="21" y1="-21" x2="-21" y2="21"/></g><rect class="caliper" x="-14" y="-30" width="28" height="12" rx="4" fill="#1f5bff"/><circle r="7" fill="#111"/></g>
+          <g class="wheel" transform="translate(610 236)"><circle r="50" fill="#0c0c0d"/><circle r="34" fill="#2a2b2d"/><circle r="34" fill="none" stroke="#6d7072" stroke-width="3"/><g class="spokes" stroke="#8b8e90" stroke-width="6" stroke-linecap="round"><line y1="-30" y2="30"/><line x1="-30" x2="30"/><line x1="-21" y1="-21" x2="21" y2="21"/><line x1="21" y1="-21" x2="-21" y2="21"/></g><rect class="caliper" x="-14" y="-30" width="28" height="12" rx="4" fill="#1f5bff"/><circle r="7" fill="#111"/></g>
+        </svg>
+        <div class="shade-controls">
+          <input type="range" id="shadeRange" min="0" max="5" step="1" value="3" aria-label="Tint shade">
+          <div class="shade-ticks" id="shadeTicks"></div>
+          <div class="paint-row">
+            <span>Wrap color</span>
+            <button class="swatch active" data-paint="blue" style="--c:#1f5bff" aria-label="Electric blue"></button>
+            <button class="swatch" data-paint="black" style="--c:#151517" aria-label="Gloss black"></button>
+            <button class="swatch" data-paint="silver" style="--c:#b8c0cc" aria-label="Chrome silver"></button>
+            <button class="swatch" data-paint="white" style="--c:#ecedeb" aria-label="White"></button>
+            <button class="swatch" data-paint="red" style="--c:#c8121b" aria-label="Red"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="films reveal">
+      <article><h3>Better privacy</h3><p>Nobody's looking in at you, your passengers or what's on the seat.</p></article>
+      <article><h3>Blocks heat</h3><p>Cooler cabin in summer, plus UV protection for your skin and your interior.</p></article>
+      <article><h3>Looks cleaner</h3><p>Even, bubble-free film edge to edge. The car just looks finished.</p></article>
+      <a href="#book" class="btn btn-black btn-lg magnetic" id="bookShade"><span>Book <span id="bookShadeNum">20</span>% tint</span> <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="work">
+    <div class="section-head reveal">
+      <p class="kicker">03 / The work</p>
+      <h2>Straight from <span class="blue">the booth.</span></h2>
+      <p class="head-sub">Prep, base, clear. Every panel gets the same attention, start to finish.</p>
+    </div>
+    <div class="gallery">
+      <figure class="shot film tilt tall"><img src="img/primer-quarter.jpg" alt="Car quarter panel masked and primed in a paint booth" loading="lazy"><figcaption><b>01</b> Masked and primed</figcaption></figure>
+      <figure class="shot film tilt tall"><img src="img/base-coat.jpg" alt="Same panel with base coat sprayed" loading="lazy"><figcaption><b>02</b> Base coat down</figcaption></figure>
+      <figure class="shot film tilt tall"><img src="img/clear-gloss.jpg" alt="Same panel with glossy clear coat" loading="lazy"><figcaption><b>03</b> Cleared. Wet look.</figcaption></figure>
+      <figure class="shot film tilt tall"><img src="img/fender-blue.jpg" alt="Blue fender freshly painted on a stand" loading="lazy"><figcaption>Blue fender, fresh paint</figcaption></figure>
+      <figure class="shot film tilt"><img src="img/bumper-black.jpg" alt="Gloss black bumper in the booth" loading="lazy"><figcaption>Gloss black, booth fresh</figcaption></figure>
+      <figure class="shot film tilt"><img src="img/panel-red.jpg" alt="Red painted panel next to masking" loading="lazy"><figcaption>Red base, clean edges</figcaption></figure>
+      <figure class="shot film tilt"><img src="img/fender-primer.jpg" alt="Fender in primer on a stand" loading="lazy"><figcaption>Prep is everything</figcaption></figure>
+      <figure class="shot film tilt"><img src="img/detail-polish.jpg" alt="Machine polisher on black paint" loading="lazy"><figcaption>Polish for that shine</figcaption></figure>
+    </div>
+    <p class="center reveal"><a class="btn btn-ghost" id="igLink" href="https://www.instagram.com/wh0jay_1607/" target="_blank" rel="noopener">More on Instagram <span data-biz="ig">@wh0jay_1607</span> ↗</a></p>
+  </section>
+
+  <!-- VERSE -->
+  <section class="verse" aria-label="Isaiah 41:10">
+    <p class="verse-text reveal">"Fear thou not; for I am with thee… I will strengthen thee."</p>
+    <p class="verse-ref reveal">✝ Isaiah 41:10</p>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section book" id="book">
+    <div class="section-head reveal">
+      <p class="kicker">04 / Book</p>
+      <h2>Book in about <span class="blue">a minute.</span></h2>
+    </div>
+    <ol class="how reveal">
+      <li><b>1</b><span>Pick the work and a time</span></li>
+      <li><b>2</b><span>Send the $<span data-biz="deposit">25</span> deposit to lock it in</span></li>
+      <li><b>3</b><span>Pull up. We handle the rest.</span></li>
+    </ol>
+    <p class="deposit-note reveal">$<span data-biz="deposit">25</span> deposit required to hold appointments.</p>
+
+    <div class="wizard reveal" id="wizard">
+      <div class="wiz-main">
+        <div class="wiz-progress"><span id="wizBar"></span></div>
+        <p class="wiz-step" id="wizStep">Step 1 of 3</p>
+
+        <!-- step 1 -->
+        <div class="pane" data-pane="1">
+          <h3>What are we doing?</h3>
+          <p class="hint">Pick one or more.</p>
+          <div class="svc-picks" id="svcPicks"></div>
+          <div class="sub" id="tintOpts" hidden>
+            <label class="lbl">Shade <small>(lower = darker)</small></label>
+            <div class="chips" id="shadeChips"></div>
+            <label class="lbl">Film</label>
+            <div class="chips" id="filmChips"></div>
+          </div>
+          <div class="sub" id="vehicleOpts" hidden>
+            <label class="lbl" for="vehicle">Year, make and model</label>
+            <input id="vehicle" class="input" placeholder="2020 Dodge Charger" autocomplete="off">
+          </div>
+          <div class="sub" id="propertyOpts" hidden>
+            <label class="lbl" for="propAddr">Property address <small>(free on-site estimate)</small></label>
+            <input id="propAddr" class="input" placeholder="123 Main St, Cleveland" autocomplete="street-address">
+          </div>
+        </div>
+
+        <!-- step 2 -->
+        <div class="pane" data-pane="2" hidden>
+          <h3>Pick a day.</h3>
+          <p class="hint" id="durHint"></p>
+          <div class="cal">
+            <div class="cal-head">
+              <button class="icon-btn" id="calPrev" aria-label="Previous month">‹</button>
+              <strong id="calTitle"></strong>
+              <button class="icon-btn" id="calNext" aria-label="Next month">›</button>
+            </div>
+            <div class="cal-dow"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div>
+            <div class="cal-grid" id="calGrid"></div>
+          </div>
+          <div class="times" id="times"></div>
+        </div>
+
+        <!-- step 3 -->
+        <div class="pane" data-pane="3" hidden>
+          <h3>Who's pulling up?</h3>
+          <form id="infoForm" novalidate>
+            <div class="grid2">
+              <div><label class="lbl" for="fName">Name</label><input id="fName" class="input" autocomplete="name" required></div>
+              <div><label class="lbl" for="fPhone">Phone</label><input id="fPhone" class="input" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(216) 555-0123"></div>
+              <div><label class="lbl" for="fEmail">Email <small>(optional)</small></label><input id="fEmail" class="input" type="email" autocomplete="email"></div>
+              <div><label class="lbl" for="fIg">Instagram <small>(optional)</small></label><input id="fIg" class="input" autocomplete="off" placeholder="@yourhandle"></div>
+            </div>
+            <label class="lbl" for="fNotes">Anything <span data-biz="owner">Jay</span> should know? <small>(optional)</small></label>
+            <textarea id="fNotes" class="input" rows="3" placeholder="Wrap color you want, old tint to remove, scratches to fix, etc."></textarea>
+            <input type="text" name="website" id="fWebsite" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <label class="check"><input type="checkbox" id="fAgree"><span id="agreeText">I understand the $25 deposit is non-refundable and holds my spot.</span></label>
+          </form>
+        </div>
+
+        <!-- done -->
+        <div class="pane done" data-pane="4" hidden>
+          <div class="check-anim"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M15 27 l7 7 l15 -16"/></svg></div>
+          <h3 id="doneTitle">You're booked.</h3>
+          <p class="done-when" id="doneWhen"></p>
+          <div class="deposit-box" id="depositBox"></div>
+          <div class="done-actions">
+            <a class="btn btn-blue" id="textOwner" href="#" target="_blank" rel="noopener">Send <span data-biz="owner">Jay</span> your booking</a>
+            <a class="btn btn-ghost" id="addCal" href="#">Add to my calendar</a>
+          </div>
+          <p class="hint">Confirmation number <b id="doneRef"></b></p>
+        </div>
+
+        <p class="wiz-err" id="wizErr" role="alert"></p>
+        <div class="wiz-nav" id="wizNav">
+          <button class="btn btn-ghost" id="wizBack" hidden>Back</button>
+          <button class="btn btn-blue btn-lg" id="wizNext" disabled>Next <span class="arrow">→</span></button>
+        </div>
+      </div>
+
+      <aside class="wiz-summary" id="wizSummary">
+        <p class="kicker">Your booking</p>
+        <ul id="sumList"><li class="muted">Nothing picked yet</li></ul>
+        <div class="sum-row"><span>Time in the bay</span><b id="sumDur">–</b></div>
+        <div class="sum-row"><span>When</span><b id="sumWhen">–</b></div>
+        <div class="sum-row dep"><span>Deposit to hold it</span><b>$<span data-biz="deposit">25</span></b></div>
+        <p class="sum-note">For prices, <span data-biz="owner">Jay</span> quotes you based on your vehicle and the work.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="section visit" id="visit">
+    <div class="visit-grid">
+      <div class="reveal">
+        <p class="kicker">05 / Visit</p>
+        <h2>Come through.</h2>
+        <div id="locations" class="locations"></div>
+        <div class="contact-rows">
+          <a href="#" data-biz-href="tel" id="phoneRow" hidden><span>Call or text</span><b data-biz="phone"></b></a>
+          <a href="https://www.instagram.com/wh0jay_1607/" target="_blank" rel="noopener" data-biz-href="ig"><span>Instagram</span><b data-biz="ig">@wh0jay_1607</b></a>
+        </div>
+      </div>
+      <div class="hours reveal">
+        <p class="kicker">Hours</p>
+        <ul id="hoursList"></ul>
+        <p class="hint">Need a different time, or want a price? Hit <span data-biz="owner">Jay</span> up.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="img/logo.svg" alt="God's Art" width="120" height="40">
+  <span>© <span id="year">2026</span> God's Art · <span data-biz="city">Cleveland, OH</span></span>
+  <a href="https://twenty47marketing.com" target="_blank" rel="noopener">Website by Twenty47 Marketing</a>
+</footer>
+
+<a href="#book" class="mobile-book" id="mobileBook">Book now <span class="arrow">→</span></a>
+
+<script src="demo/demo.js" type="module"></script>
+<script src="site.js" type="module"></script>
+</body>
+</html>
