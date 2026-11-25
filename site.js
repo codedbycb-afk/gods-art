@@ -117,7 +117,7 @@ $("#bookShade").addEventListener("click", () => {
 });
 
 // ---------- config-driven content ----------
-const SVC_IMG = { "auto-tint": "tint-sedan", wrap: "wrap-charger", "wrap-accents": "fender-blue", detail: "detail-polish", "paint-correction": "clear-gloss" };
+const SVC_IMG = { "auto-tint": "tint-install", wrap: "wrap-install", "wrap-accents": "chrome-delete", detail: "interior-detail", "paint-correction": "paint-correction" };
 const fmtDur = m => m < 60 ? `${m} min` : `${+(m / 60).toFixed(1).replace(/\.0$/, "")} hr${m >= 120 ? "s" : ""}`;
 const fmtHm = hm => {
   const [h, m] = hm.split(":").map(Number);
